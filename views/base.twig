@@ -1,0 +1,53 @@
+{% include 'head.twig' %}
+
+{% block head %}
+{% endblock %}
+</head>
+
+  <body class="{{body_class}}" data-source="base.twig">
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header>
+      <div class="container">
+        {% include 'header.twig' %}
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div id="content" role="main" class="content-wrapper">
+        {% block full_width %}{% endblock %}
+        
+        <div class="row">
+          
+          <div class="main-content {% if sidebar %}col-md-9{% endif %}">
+            {% block content %}
+              Sorry, no content
+            {% endblock %}
+          </div>
+          
+          {% if sidebar %}
+            <aside class="main-sidebar col-md-3">
+              {{sidebar}}
+            </aside>
+          {% endif %}
+
+        </div>
+      </div>
+
+    </div><!-- /container (.content-wrapper) -->
+    
+    <footer>
+      <div class="container">
+        {% include 'footer.twig' %}
+      </div>
+    </footer>
+    
+    {{ function('wp_footer') }}
+  
+  </body>
+
+</html>
