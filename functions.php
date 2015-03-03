@@ -55,3 +55,28 @@ function load_scripts(){
 
 // Hide Admin Bar
 add_filter('show_admin_bar', '__return_false');
+
+// Register Sidebar
+// function register_sidebar_init() {
+// 	register_sidebar( array(
+// 		'name' => 'Dynamic Sidebar',
+// 		'id' => 'dynamic_sidebar',
+// 		'before_widget' => '<div>',
+// 		'after_widget' => '</div>',
+// 		'before_title' => '<h4>',
+// 		'after_title' => '</h4>',
+// 	) );
+// }
+// add_action( 'widgets_init', 'register_sidebar_init' );
+
+// Short text function
+function shorten_text ( $content, $length = 50, $ellipsis = true ) {
+  if (strlen($content) > $length) {
+    $content = strip_tags($content);
+    $shortened_content = preg_replace('/\s+?(\S+)?$/', '', substr($content, 0, $length));
+    $shortened_content = $shortened_content . '...';
+    return $shortened_content;
+  } else {
+    return $content;
+  }
+}

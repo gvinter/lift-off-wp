@@ -1,0 +1,27 @@
+{
+  "name": "Lift Off WP",
+  "version": "0.2",
+  "homepage": "https://github.com/gvinter/lift-off-wp",
+  "authors": [
+    "Galen Vinter <galen.vinter@gmail.com>"
+  ],
+  "description": "Starter package for WordPress themes with Timber templating",
+  "main": "style.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "materialize": "~0.95.3"
+  },
+  "dependencies": {
+    "materialize": "~0.95.3",
+    "include-media": "~1.1.2",
+    "modernizr": "~2.8.3",
+    "jquery": "~2.1.3"
+  }
+}
