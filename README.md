@@ -34,8 +34,9 @@ This is my own flavor of a starting point for new WordPress projects that requir
 #### Theming Guide
 1. Update theme details in `style.css`
 - change `screenshot.png` for theme screenshot
-- change `favicon.cc`
+- add `favicon.cc` to `public/img`
 - change `apple-touch-icon-precomposed.png`
+- update RSS feed in `head.twig`
 
 
 #### Recommended Plugins
@@ -43,3 +44,9 @@ This is my own flavor of a starting point for new WordPress projects that requir
 - W3 Total Cache
 - ContactForm7
 - MailChimp
+- Advanced Custom Fields
+
+
+## TODO
+
+- update meta tags to be based on page attributes, not just the whole site

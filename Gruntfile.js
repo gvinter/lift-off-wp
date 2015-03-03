@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'public/css/main.min.css': 'css/main.sass'
+          'public/css/main.min.css': 'css/main.scss'
         }
       }
     },
@@ -24,20 +24,10 @@ module.exports = function(grunt) {
       },
       build: {
         src: [
-          'js/main.js',
+          'bower_components/jquery/dist/jquery.min.js',
+          // 'bower_components/materialize/js....'
           'js/plugins.js',
-          'js/vendor/bootstrap/affix.js',
-          'js/vendor/bootstrap/alert.js',
-          'js/vendor/bootstrap/button.js',
-          'js/vendor/bootstrap/carousel.js',
-          'js/vendor/bootstrap/collapse.js',
-          'js/vendor/bootstrap/dropdown.js',
-          'js/vendor/bootstrap/tab.js',
-          'js/vendor/bootstrap/transition.js',
-          'js/vendor/bootstrap/scrollspy.js',
-          'js/vendor/bootstrap/modal.js',
-          'js/vendor/bootstrap/tooltip.js',
-          'js/vendor/bootstrap/popover.js'
+          'js/main.js',
         ],
         dest: 'public/js/main.min.js'
       }
@@ -45,6 +35,13 @@ module.exports = function(grunt) {
 
     // Watch
     watch: {
+      // Watch this file
+      configFiles: {
+        files: 'Gruntfile.js',
+        options: {
+          reload: true
+        }
+      },
       sass: {
         files: 'css/**/*.sass',
         tasks: ['sass']
@@ -53,7 +50,6 @@ module.exports = function(grunt) {
         files: 'js/**/*.js',
         tasks: ['uglify']
       }
-      
     }
 
   });
