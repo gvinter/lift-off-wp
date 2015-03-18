@@ -5,6 +5,7 @@
   <!--[if gt IE 8]><!--><html class="no-js" {{site.language_attributes}}> <!--<![endif]-->
   <head>
   <meta charset="{{site.charset}}" />
+  
   <title>{{wp_title}}</title>
   <meta name="description" content="{{site.description}}">
   
@@ -15,42 +16,18 @@
   <!-- Schema.org Tags -->
   <meta itemprop="url" content="{{site.url}}" />
   <meta itemprop="name" content="{{site.name}}" />
-  <meta itemprop="email" content="" />
   <meta itemprop="description" content="{{site.description}}" />
-  <meta itemprop="address" content="" />
   <meta itemprop="image" content="" />
   
-  <!-- Open Graph Tags -->
-  <meta name="og:site_name" content="" />
-  <meta name="og:title" content="" />
-  <meta name="og:url" content="" />
-  <meta name="og:image" content="" />
-  <meta name="og:type" content="" />
+  <meta itemprop="address" content="" />
+  <meta itemprop="email" content="" />
 
   <link rel="pingback" href="{{site.pingback_url}}" />
-  <link rel="shortcut icon" href="{{site.theme.link}}/img/favicon.ico"/>
-  <link rel="stylesheet" href="{{site.theme.link}}/style.css" type="text/css" media="screen" />
+  <link rel="shortcut icon" href="{{site.theme.link}}/public/img/favicon.ico"/>
+  <link rel="stylesheet" href="{{site.theme.link}}/public/css/main.min.css" type="text/css" media="screen" />
+
+  <link rel="alternate" type="application/rss+xml" title="{{site.name}} RSS Feed" href="{{site.url}}/feed" />
 
   {{function('wp_head')}}
 
-  <style type="text/css">
-    body {
-      padding-top: 70px;
-    }
-
-    .theme-dropdown .dropdown-menu {
-      position: static;
-      display: block;
-      margin-bottom: 20px;
-    }
-
-    .theme-showcase > p > .btn {
-      margin: 5px 0;
-    }
-    footer {
-      background: #eee;
-      margin-top: 50px;
-      padding: 20px 0;
-      text-align: center;
-    }
-    </style>
+  <script type="text/javascript" src="{{site.theme.link}}/bower_components/modernizr/modernizr.js"></script>
