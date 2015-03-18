@@ -17,12 +17,11 @@ This is my own flavor of a starting point for new WordPress projects that requir
 
 ##### This a mixed recipe from:
 - [Initializr](http://www.initializr.com/)
-- [Bootstrap](http://www.getbootstrap.com/)
+- [Materialize](http://materializecss.com/)
 - [Bower](https://bower.io)
-    - [Includ Media](http://include-media.com/)
-    - jQuery
-    - Modernizr
-    - 
+- [Includ Media](http://include-media.com/)
+- jQuery
+- Modernizr
 - [SASS](http://sass-lang.com/)
 - [Timber](http://upstatement.com/timber/)
 
