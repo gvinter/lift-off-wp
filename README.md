@@ -38,3 +38,9 @@ I'm a fan of [The Guadrian's SASS-MQ]((https://github.com/guardian/sass-mq/)) li
 
 ##### TODOs
 - TODO: comments.php is still in Starker. Move to Timber-style
+- Add `Advanced Custom Fields` plugin to theme.
+- Add `Twitter Feed` plugin to theme.
+- Add Timber CPT examples and pagination example.
+- helper functions
+    + short_text
+- set image sizes
